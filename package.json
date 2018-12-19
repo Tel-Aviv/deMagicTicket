@@ -4,9 +4,7 @@
   "main": "webpack.config.js",
   "author": "Oleg Kleiman",
   "scripts": {
-    "build": "webpack -d  --progress --watch",
-    "dev": "webpack --watch --progress & nodemon index.js",
-    "linter": "eslint ./src"
+    "build": "webpack -d  --progress --watch"
   },
   "license": "MIT",
   "dependencies": {
