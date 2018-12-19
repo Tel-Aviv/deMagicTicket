@@ -1,9 +1,5 @@
 // @flow
 import React from "react";
-// import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Col,
-  Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle, Button } from 'reactstrap';
 import QRCode from 'qrcode.react';
 
 type State = {

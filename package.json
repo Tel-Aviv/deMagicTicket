@@ -16,8 +16,7 @@
     "qrcode.react": "^0.8.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-query-params": "^1.0.9",
-    "reactstrap": "^6.5.0"
+    "react-query-params": "^1.0.9"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
