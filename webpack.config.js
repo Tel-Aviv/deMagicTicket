@@ -21,6 +21,17 @@ module.exports = {
                 exclude: /(node_modules|bower_components)/,
                 loader: "babel-loader",
             },
+            {
+              test: /\.css$/,
+              use: ['style-loader', 'css-loader']
+            },
+            {
+              test: /\.(gif|png|svg)$/,
+              loader: 'file-loader',
+              options: {
+                outputPath: 'img/'
+              }
+            }   
         ],
     },
     output: {

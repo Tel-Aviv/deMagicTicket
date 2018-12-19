@@ -1,5 +1,6 @@
 // @flow
 import React from "react";
+import '../main.css';
 import QRCode from 'qrcode.react';
 
 type State = {
@@ -13,11 +14,6 @@ type Props = {
 
 class BusinessCard extends React.Component<Props, State> {
 
-    state = {
-        tid: this.props.data.tid,
-        userName: this.props.data.userName
-    };
-
     render() {
 
         if( !this.props.data.tid )
@@ -27,7 +23,7 @@ class BusinessCard extends React.Component<Props, State> {
 
         return (
           <div className='main-content'>
-            <div className='top-title'>
+            <div className='top-title' >
               <span>אגף מחשוב ומערכות מידע</span>
             </div>
             <div className='wrapper-pic'>
