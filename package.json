@@ -5,6 +5,7 @@
   "author": "Oleg Kleiman",
   "scripts": {
     "build": "NODE_ENV=production webpack --progress",
+    "client-build": "webpack -d --watch",
     "dev": "webpack --watch --progress & nodemon index.js",
     "linter": "eslint ./src"
   },
@@ -14,7 +15,9 @@
     "node-fetch": "^2.3.0",
     "qrcode.react": "^0.8.0",
     "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "react-query-params": "^1.0.9",
+    "reactstrap": "^6.5.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

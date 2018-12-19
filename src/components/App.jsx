@@ -1,5 +1,6 @@
 // @flow
 import React from 'react';
+import ReactQueryParams from 'react-query-params';
 import BusinessCard from './BusinessCard.jsx';
 
 const baseUrl = 'https://northeurope.api.cognitive.microsoft.com/face/v1.0/'
@@ -13,7 +14,7 @@ type Props = {
 
 }
 
-class App extends React.Component<Props, State>{
+class App extends ReactQueryParams<Props, State>{
 
   state = {
     userData: {}
@@ -21,7 +22,9 @@ class App extends React.Component<Props, State>{
 
   async componentDidMount() {
 
-    const res = await fetch(`${baseUrl}largefacelists/${largeFaceListId}/persistedfaces/00dd16a2-76f5-4596-9368-0c2ab47b0781`, {
+    const faceId = this.queryParams.faceId;
+
+    const res = await fetch(`${baseUrl}largefacelists/${largeFaceListId}/persistedfaces/${faceId}`, {
       method: 'GET',
       headers: {
         'Ocp-Apim-Subscription-Key': '91c9316d38044714b15eb630c1b6738a'

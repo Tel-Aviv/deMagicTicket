@@ -3,5 +3,7 @@ import ReactDOM from "react-dom";
 
 import App from "./components/App.jsx";
 
-ReactDOM.hydrate( <App />,
+// ReactDOM.hydrate( <App />,
+//                   document.getElementById( "root" ));
+ReactDOM.render( <App />,
                   document.getElementById( "root" ));
