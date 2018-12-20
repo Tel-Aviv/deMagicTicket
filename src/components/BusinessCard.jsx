@@ -35,6 +35,7 @@ const BusinessCard = (props: Props)  => {
                   bgColor={"#ffffff"}
                   fgColor={"#000000"}
                   renderAs='svg'
+                  includeMargin='true'
                   level={"L"}
                 />
           </div>
