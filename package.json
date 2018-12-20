@@ -15,9 +15,7 @@
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "react-query-params": "^1.0.9",
-    "style-loader": "^0.23.1"
-  },
-  "devDependencies": {
+    "style-loader": "^0.23.1",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-transform-class-properties": "^6.24.1",
