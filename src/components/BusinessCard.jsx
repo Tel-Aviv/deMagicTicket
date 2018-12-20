@@ -22,15 +22,19 @@ const BusinessCard = (props: Props)  => {
           <div className='wrapper-pic'>
             <img src={url} className='marg-pic' width='145' height='145'/>
           </div>
+          <div className='title'>
+            <div>{props.data.title}</div>
+          </div>
           <div className='lamp-p'>
             <img src='./img/lamp-icon.png' />
           </div>
           <div className='wrapper-qr'>
               <QRCode
                   value={props.data.userName}
-                  size={120}
+                  size={145}
                   bgColor={"#ffffff"}
                   fgColor={"#000000"}
+                  renderAs='svg'
                   level={"L"}
                 />
           </div>

@@ -1,3 +1,6 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 .back-i {
   margin: 0px;
   background-image: url(./img/back-icons.png);
@@ -26,12 +29,16 @@
   text-align: center;
 }
 
+.title {
+  text-align: center;
+  font-size: 22px;
+}
+
 .top-title {
   width: 100%;
   text-align: center;
   height: 50px;
   font-size: 25px;
-  font-family: Arial, Helvetica, sans-serif;
   background-color: #bcd748;
   margin-bottom: 25px;
   padding: 20px 2px 0px 2px;
