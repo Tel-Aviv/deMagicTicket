@@ -4,7 +4,7 @@
   "main": "webpack.config.js",
   "author": "Oleg Kleiman",
   "scripts": {
-    "build": "webpack -d  --progress --watch"
+    "start": "webpack -d  --progress --watch"
   },
   "license": "MIT",
   "dependencies": {
